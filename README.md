@@ -1,26 +1,9 @@
----
-
 # Data Warehouse and Analytics Project
+This project is a complete end-to-end data engineering solution that demonstrates how to design and implement a scalable, structured data pipeline using modern best practices in data architecture, ETL, and analytics. It follows the **Medallion Architecture** (Bronze, Silver, and Gold layers) and showcases advanced SQL-based ETL processes and analytical reporting.
 
-A comprehensive end-to-end data warehousing and analytics solution designed using modern best practices in data architecture, ETL, and business intelligence. This project demonstrates how to build a scalable and structured data pipeline using the **Medallion Architecture** (Bronze, Silver, and Gold layers) and perform advanced SQL-based analytical reporting.
-
-> 🧠 Inspired by and developed following the tutorials from **CodeWithBaraa**.
 
 ---
-
-## Table of Contents
-
-* [🏗️ Project Architecture](#-project-architecture)
-* [🔁 Project Components](#-project-components)
-* [🧠 Example SQL Analysis](#-example-sql-analysis)
-* [🗂️ Folder Structure](#-folder-structure)
-* [🚀 Getting Started](#-getting-started)
-* [📊 Visualization (Optional)](#-visualization-optional)
-* [🤝 Acknowledgements](#-acknowledgements)
-* [📄 License](#-license)
-
----
-## 🏗️ Project Architecture
+## Project Architecture
 
 The solution follows the **Medallion Architecture** for progressive data refinement:
 
@@ -39,14 +22,14 @@ The solution follows the **Medallion Architecture** for progressive data refinem
 * Star schema modeling (Fact + Dimension tables)
 * Business views and analytical queries for decision-making
 
-> 📌 **Architecture Diagram**
+> **Architecture Diagram**
 > **Replace the placeholder below with your own diagram:**
 
 ![Data Architecture Diagram](diagrams/medallion-architecture-placeholder.png)
 
 ---
 
-## 🔁 Project Components
+## Project Components
 
 ### 1. Data Architecture
 
@@ -66,11 +49,11 @@ Modern Medallion design (Bronze → Silver → Gold)
 
 ---
 
-## 🧠 Example SQL Analysis
+## Example SQL Analysis
 
 > 📌 **Replace these with your actual queries and charts later**
 
-### ⏳ Time-Based Trends
+### Time-Based Trends
 
 ```sql
 -- Total Sales Over Time
@@ -80,7 +63,7 @@ GROUP BY order_date
 ORDER BY order_date;
 ```
 
-### 📈 Cumulative Metrics
+### Cumulative Metrics
 
 ```sql
 -- Running Total of Sales
@@ -90,7 +73,7 @@ SELECT
 FROM fact_sales;
 ```
 
-### 📉 Performance Insights
+### Performance Insights
 
 ```sql
 -- Current vs. Previous Year Sales
@@ -107,7 +90,7 @@ GROUP BY year;
 
 ---
 
-## 🗂️ Folder Structure
+## Folder Structure
 
 ```
 ├── data/                    # Raw data files (CSV)
@@ -122,9 +105,9 @@ GROUP BY year;
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
-### ✅ Prerequisites
+### Prerequisites
 
 * PostgreSQL installed
 * SQL client (pgAdmin, DBeaver, etc.)
@@ -135,7 +118,7 @@ git clone https://github.com/your-username/data-warehouse-analytics.git
 cd data-warehouse-analytics
 ```
 
-### ⚙️ Setup
+### Setup
 
 1. Load raw data into PostgreSQL using scripts in `sql/ingestion/`
 2. Run transformation scripts in `sql/transformation/`
@@ -144,7 +127,7 @@ cd data-warehouse-analytics
 
 ---
 
-## 📊 Visualization (Optional)
+## Visualization (Optional)
 
 > 📌 **Add your BI reports or screenshots here (e.g., Power BI, Tableau)**
 
@@ -154,16 +137,12 @@ cd data-warehouse-analytics
 
 ---
 
-## 🤝 Acknowledgements
+## Acknowledgements
 
-Thanks to [CodeWithBaraa](https://github.com/codewithbaraa) for providing the base knowledge and structure that inspired this project.
+Thanks to [CodeWithBaraa](https://www.youtube.com/@DataWithBaraa) for providing the base knowledge, tutorial guide and structure that inspired this project.
 
 ---
 
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Let me know if you'd like sample Power BI dashboards or dummy diagrams to plug in temporarily.
