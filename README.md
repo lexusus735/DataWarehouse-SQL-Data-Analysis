@@ -1,8 +1,6 @@
-Certainly! Here's your updated `README.md` with a **Table of Contents** section added. The links use Markdown anchor links, which will work on GitHub to jump to each section.
-
 ---
 
-# 📊 Data Warehouse and Analytics Project
+# Data Warehouse and Analytics Project
 
 A comprehensive end-to-end data warehousing and analytics solution designed using modern best practices in data architecture, ETL, and business intelligence. This project demonstrates how to build a scalable and structured data pipeline using the **Medallion Architecture** (Bronze, Silver, and Gold layers) and perform advanced SQL-based analytical reporting.
 
@@ -10,7 +8,7 @@ A comprehensive end-to-end data warehousing and analytics solution designed usin
 
 ---
 
-## 📚 Table of Contents
+## Table of Contents
 
 * [🏗️ Project Architecture](#-project-architecture)
 * [🔁 Project Components](#-project-components)
@@ -20,34 +18,6 @@ A comprehensive end-to-end data warehousing and analytics solution designed usin
 * [📊 Visualization (Optional)](#-visualization-optional)
 * [🤝 Acknowledgements](#-acknowledgements)
 * [📄 License](#-license)
-
----
-
-## 🏗️ Project Architecture
-
-The solution follows the **Medallion Architecture** for progressive data refinement:
-
-...
-
-*(Rest of the content remains unchanged from the version above.)*
-
----
-
-Let me know if you'd like this exported as a `.md` file or want a custom GitHub badge section added too!
-
-
-## 🏗️ Project Architecture
-
-The solution follows the **Medallion Architecture** for progressive data refinement:
-
-...
-
-*(Rest of the content remains unchanged from the version above.)*
-
----
-
-Let me know if you'd like this exported as a `.md` file or want a custom GitHub badge section added too!
-
 
 ---
 ## 🏗️ Project Architecture
