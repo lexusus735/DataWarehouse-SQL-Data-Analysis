@@ -24,9 +24,8 @@ The solution is designed around a layered Medallion Architecture:
 * Designed for reporting, dashboards, and stakeholder queries
 
 > **Architecture Diagram**
-> **Replace the placeholder below with your own diagram:**
 
-![Data Architecture Diagram](diagrams/medallion-architecture-placeholder.png)
+![datawarehouse drawio](https://github.com/user-attachments/assets/ecf871d9-ebbe-4210-873d-296549f7f5fd)
 
 ---
 
@@ -43,9 +42,6 @@ The solution is designed around a layered Medallion Architecture:
 ---
 
 ## sample SQL Analysis
-
-> 📌 **Replace these with your actual queries and charts later**
-
 ### Time-Based Trends
 
 ```sql
