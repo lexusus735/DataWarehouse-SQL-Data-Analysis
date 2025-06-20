@@ -1,26 +1,27 @@
 # Data Warehouse and Analytics Project
-This project is a complete end-to-end data engineering solution that demonstrates how to design and implement a scalable, structured data pipeline using modern best practices in data architecture, ETL, and analytics. It follows the **Medallion Architecture** (Bronze, Silver, and Gold layers) and showcases advanced SQL-based ETL processes and analytical reporting.
+This project is a complete end-to-end data engineering and analytics solution that demonstrates how to build a scalable data warehouse using modern best practices. It follows the Medallion Architecture (Bronze → Silver → Gold) and focuses on SQL-based ETL, star schema modeling, and analytical reporting.
 
 
 ---
 ## Project Architecture
 
-The solution follows the **Medallion Architecture** for progressive data refinement:
+The solution is designed around a layered Medallion Architecture:
 
 ### 🔸 Bronze Layer: Raw Data Ingestion
 
 * **Source**: Raw CSV files
-* **Target**: PostgreSQL tables (no transformation)
+* **Target**: PostgreSQL staging tables
+* **Purpose**: Store untransformed, original data
 
 ### 🔹 Silver Layer: Data Transformation
 
-* Data cleaning, type casting, and derived columns
-* Standardized and normalized structure
+* Data type enforcement, normalization, and column derivation
+* Intermediate schema for reliable transformations
 
 ### 🟡 Gold Layer: Business-Ready Schema
 
-* Star schema modeling (Fact + Dimension tables)
-* Business views and analytical queries for decision-making
+* Star schema modeling: `fact_sales`, `dim_customer`, `dim_product`, `dim_date`
+* Designed for reporting, dashboards, and stakeholder queries
 
 > **Architecture Diagram**
 > **Replace the placeholder below with your own diagram:**
@@ -29,27 +30,19 @@ The solution follows the **Medallion Architecture** for progressive data refinem
 
 ---
 
-## Project Components
+## Key Components
 
-### 1. Data Architecture
+| Area                      | Description                                             |
+| ------------------------- | ------------------------------------------------------- |
+| **Data Architecture**     | Modern Medallion model (Bronze → Silver → Gold)         |
+| **ETL Pipelines**         | SQL scripts for ingestion, transformation, and modeling |
+| **Data Modeling**         | Star schema for analytical workloads                    |
+| **Analytics & Reporting** | SQL-based business insights, KPIs, and trends           |
 
-Modern Medallion design (Bronze → Silver → Gold)
-
-### 2. ETL Pipelines
-
-* SQL scripts to ingest, clean, and model data
-
-### 3. Data Modeling
-
-* Star Schema: `fact_sales`, `dim_customer`, `dim_product`, `dim_date`
-
-### 4. Analytics & Reporting
-
-* SQL-driven business insights and KPIs
 
 ---
 
-## Example SQL Analysis
+## sample SQL Analysis
 
 > 📌 **Replace these with your actual queries and charts later**
 
@@ -111,32 +104,19 @@ GROUP BY year;
 
 * PostgreSQL installed
 * SQL client (pgAdmin, DBeaver, etc.)
-* Clone this repo:
+* Git
 
+### Setup
 ```bash
 git clone https://github.com/your-username/data-warehouse-analytics.git
 cd data-warehouse-analytics
 ```
+1. Ingest raw data using scripts in `sql/ingestion/`
+2. Transform data using scripts in `sql/transformation/`
+3. Model data into a star schema using `sql/modeling/`
+4. Analyze trends and KPIs with queries from `sql/analysis/`
 
-### Setup
-
-1. Load raw data into PostgreSQL using scripts in `sql/ingestion/`
-2. Run transformation scripts in `sql/transformation/`
-3. Build the star schema with `sql/modeling/`
-4. Explore insights with queries in `sql/analysis/`
-
----
-
-## Visualization (Optional)
-
-> 📌 **Add your BI reports or screenshots here (e.g., Power BI, Tableau)**
-
-* Sales Trend Dashboard 📉
-* Customer Segmentation 📂
-* Performance Scorecards 📋
-
----
-
+----
 ## Acknowledgements
 
 Thanks to [CodeWithBaraa](https://www.youtube.com/@DataWithBaraa) for providing the base knowledge, tutorial guide and structure that inspired this project.
